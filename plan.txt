@@ -56,3 +56,11 @@ Questions
 - How do you test something like this?
 
 Tests
+- Does a cell exist
+- Does a cell have a location
+- Does a cell know its state
+- Do multiple cells exist
+- Do multiple cells have locations
+- Does a cell know how many other cells are around it
+- Does a cell know what to do based on the cells around it
+- 
