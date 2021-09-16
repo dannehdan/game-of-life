@@ -39,7 +39,7 @@ Must follow the 4 rules
 The cell doesn't need to know its specific location, but it needs to know the location of cells around it
 
 Step 1
-  Start Game
+  Generate a game board
 Step 2
   Generate a cell
 Step 3
@@ -56,6 +56,7 @@ Questions
 - How do you test something like this?
 
 Tests
+- Does the game board exist
 - Does a cell exist
 - Does a cell have a location
 - Does a cell know its state
