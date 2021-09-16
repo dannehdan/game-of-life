@@ -1,0 +1,30 @@
+Three elements needed for Conway's Game of Life
+1. The cells
+2. The grid
+3. The timing (tick)
+
+1. The cells
+
+Must follow the 4 rules
+- Any live cell with 2 or 3 live neighbours survives until the next tick
+- Any live cell with less than 2 live neighbours dies (underpopulation)
+- Any live cell with more than 3 live neighbours dies (overpopulation)
+- Any dead cell with exactly 3 neighbours becomes a live cell (reproduction)
+
+The cell doesn't need to know its specific location, but it needs to know the location of cells around it
+
+Step 1
+  Start Game
+Step 2
+  Generate a cell
+Step 3
+  Generate several cells
+Step 4
+  Get cells to know which cells are around them
+Step 5
+  Get cells to act based on the cells around them
+Step 6
+  Start several cycles
+
+Questions
+- How do you define something and it's location in code form?
