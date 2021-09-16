@@ -3,13 +3,38 @@ Three elements needed for Conway's Game of Life
 2. The grid
 3. The timing (tick)
 
+-------
+
 1. The cells
 
 Must follow the 4 rules
 - Any live cell with 2 or 3 live neighbours survives until the next tick
+
+    if live_cell_neighbours > 1 || live_cell_neighbours < 4
+      cell_state = Live
+    else
+      cell_state = Dead
+    end
+
 - Any live cell with less than 2 live neighbours dies (underpopulation)
+  
+    if live_cell_neighbours < 2
+      cell_state = Dead
+    end
+
 - Any live cell with more than 3 live neighbours dies (overpopulation)
+
+    if live_cell_neighbours > 3
+      cell_state = Dead
+    end
+
 - Any dead cell with exactly 3 neighbours becomes a live cell (reproduction)
+  
+    if live_cell_neighbours = 3
+      cell_state = Live
+    end
+
+-------
 
 The cell doesn't need to know its specific location, but it needs to know the location of cells around it
 
@@ -28,3 +53,6 @@ Step 6
 
 Questions
 - How do you define something and it's location in code form?
+- How do you test something like this?
+
+Tests
