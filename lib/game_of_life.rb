@@ -9,4 +9,4 @@ def set_board(n)
   print board
 end
 
-set_board(4)
+set_board(3)
