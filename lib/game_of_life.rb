@@ -1,12 +1,17 @@
-def set_board(n)
-  board = []
+def generate_board(n)
+  @board = []
   n.times do |row_index|
-    board[row_index] = [n]
+    @board[row_index] = [n]
     n.times do |column_index|
-      board[row_index][column_index] = rand(2)
+      @board[row_index][column_index] = nil # = rand(2)
     end
   end
-  print board
+  @board
+  populate_board
 end
 
-set_board(3)
+def populate_board
+  print @board
+end
+
+generate_board(3)

@@ -40,6 +40,8 @@ The cell doesn't need to know its specific location, but it needs to know the lo
 
 Step 1
   Generate a game board
+   - Populate a game board randomly
+   - Load a game board that pre exists
 Step 2
   Generate a cell
 Step 3
