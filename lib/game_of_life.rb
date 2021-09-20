@@ -20,7 +20,11 @@ def display_board
   end
 end
 
-def modify cells
+def loop_board
+  @board
+end
+
+def modify_cells
   total = []
   @board.each do |thing|
     y = 0
@@ -36,7 +40,9 @@ def modify cells
     @board[1][1] = 1
   end
   
-  print_array
+  display_board
 end
 
-generate_random_board(10)
+generate_random_board(3)
+print "\n"
+modify_cells
