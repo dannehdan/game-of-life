@@ -1,17 +1,20 @@
-arr = [[1, 1, 1], [1, 0, 1], [1, 1, 1]]
-arr.each do |x|
-  print "#{x}\n"
+@arr = [[1, 1, 1], [1, 1, 1], [1, 1, 1]]
+def print_array
+  @arr.each do |x|
+    print "#{x}\n"
+  end
 end
 
-# print arr [1][1]
+print_array
 
 x = 0
 y = 0
 
-puts arr[x][y]
+puts @arr[x][y]
+
 
 total = []
-arr.each do |thing|
+@arr.each do |thing|
   y = 0
   thing.each do |other_thing|
     total.push(thing[y])
@@ -19,4 +22,10 @@ arr.each do |thing|
   end
 end
 
-print total.sum
+ if total.sum > 3
+  @arr[1][1] = 0
+ else
+  @arr[1][1] = 1
+end
+
+print_array
