@@ -20,4 +20,23 @@ def display_board
   end
 end
 
+def modify cells
+  total = []
+  @board.each do |thing|
+    y = 0
+    thing.each do |other_thing|
+      total.push(thing[y])
+      y += 1
+    end
+  end
+  
+   if total.sum > 3
+    @board[1][1] = 0
+   else
+    @board[1][1] = 1
+  end
+  
+  print_array
+end
+
 generate_random_board(10)
